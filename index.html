@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OverEasy</title>
+    <meta title="description" content="A deliciously lightweight OOCSS grid and style framework">
+    <meta title="author" content="Zach Saffrin">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="stylesheet" href="node_modules/overeasy/css/overeasy.min.css">
+</head>
+<body>
+
+    <div class="fixed" style="width: 11rem; height: 100vh; overflow-x: hidden; overflow-y: scroll">
+        <div class="p1">
+            <a href="./"><img src="img/oe-egg.svg" alt="OverEasy" width="50%" /></a>
+        </div>
+        <a href="./" class="block p1 font-head size-xl strong nostyle hover-bg-toaster">OverEasy</a>
+        <a href="#getting-started" class="block p1 bold nostyle hover-bg-toaster">Getting Started</a>
+
+        <div class="p1 pt2 font-head caps black border-top border-toaster">Modules</div>
+        <a href="#config" class="block px1 bold nostyle apple hover-bg-toaster">config</a>
+        <a href="#reset" class="block px1 bold nostyle apple hover-bg-toaster">reset</a>
+        <a href="#grid" class="block px1 bold nostyle apple hover-bg-toaster">grid</a>
+        <a href="#whitespace" class="block px1 bold nostyle apple hover-bg-toaster">whitespace</a>
+        <a href="#layout" class="block px1 bold nostyle apple hover-bg-toaster">layout</a>
+        <a href="#flex" class="block px1 bold nostyle apple hover-bg-toaster">flex</a>
+        <a href="#responsive" class="block px1 bold nostyle apple hover-bg-toaster">responsive</a>
+        <a href="#typography-defaults" class="block px1 bold nostyle apple hover-bg-toaster">typography-defaults</a>
+        <a href="#typography-utilities" class="block px1 bold nostyle apple hover-bg-toaster">typography-utilities</a>
+        <a href="#backgrounds" class="block px1 bold nostyle apple hover-bg-toaster">backgrounds</a>
+        <a href="#borders" class="block px1 bold nostyle apple hover-bg-toaster">borders</a>
+        <a href="#buttons" class="block px1 bold nostyle apple hover-bg-toaster">buttons</a>
+        <a href="#text-colors" class="block px1 bold nostyle apple hover-bg-toaster">text-colors</a>
+        <a href="#hover-text-colors" class="block px1 bold nostyle apple hover-bg-toaster">hover-text-colors</a>
+        <a href="#bg-colors" class="block px1 bold nostyle apple hover-bg-toaster">bg-colors</a>
+        <a href="#hover-bg-colors" class="block px1 bold nostyle apple hover-bg-toaster">hover-bg-colors</a>
+        <a href="#border-colors" class="block px1 bold nostyle apple hover-bg-toaster">border-colors</a>
+        <a href="#hover-border-colors" class="block px1 bold nostyle apple hover-bg-toaster">hover-border-colors</a>
+        <div class="my2">&nbsp;</div>
+    </div>
+
+    <div class="bg-white" style="margin-left: 11rem; height: 100vh; overflow-x: hidden; overflow-y: scroll">
+        <div class="clear py4 bg-banana center">
+            <img src="img/oe-egg.svg" alt="OverEasy" width="150px" />
+            <h1>OverEasy</h1>
+            <div class="bold">A deliciously lightweight OOCSS grid and style framework</div>
+            <div class="center mt3">
+                <a href="https://github.com/overeasy-css" target="_blank" class="btn border-bluecorn hover-bg-krispie white">GitHub</a> 
+            </div>
+        </div>
+
+
+        <a name="getting-started"></a>
+        <div class="clear container my2 pt2">
+            <h2>Getting Started</h2>
+            <p>OverEasy is a collection of targeted utilities packaged as individual Node modules. You can install and use them individually if you prefer, but the simplest way to get started is to just install the main package:</p>
+            <div class="clear mb2">
+                <code class="p1 bg-toaster">
+                    npm install overeasy    
+                </code>
+            </div>
+            <p>This package will install all the individual module packages automatically as dependencies. If you wanted to customize your build, this will have everything you need to do it, but it also contains pre-compiled CSS, which you can just link to your page to get started right away. No assembly required.</p>
+            <div class="clear mb2">
+                <code class="block p1 bg-toaster">
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/overeasy/css/overeasy.css&quot;&gt; 
+                    <span class="pestle">// Expanded  ~22 KB</span> <br>
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/overeasy/css/overeasy.min.css&quot;&gt; 
+                    <span class="pestle">// Minified  ~18 KB</span> <br>
+                </code>
+            </div>
+        </div>
+
+
+        <a name="config"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-config</h2>
+            <p>Most of OverEasy is in the form of inline utilities which are immutable, but there are also some opinions baked into the framework for rapid deployment purposes. This module is where variable opinions for all the other modules are set, so if you want to change a setting you don&apos;t need to hunt through everything to find it.</p>
+        </div>
+
+
+        <a name="reset"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-reset</h2>
+        </div>
+
+
+        <a name="grid"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-grid</h2>
+
+            <h3 class="caps">Columns</h3>
+            <p>The number of columns can be changed in <code class="p1 bg-toaster">overeasy-config</code></p>
+            <div class="clear mt2 mb3 skim bold center size-sm">
+                <div class="col col-1 py1 bg-bluecorn border border-skim">1</div>
+                <div class="col col-11 py1 bg-bluecorn border border-skim">11</div>
+                
+                <div class="col col-2 py1 bg-bluecorn border border-skim">2</div>
+                <div class="col col-10 py1 bg-bluecorn border border-skim">10</div>
+                
+                <div class="col col-3 py1 bg-bluecorn border border-skim">3</div>
+                <div class="col col-9 py1 bg-bluecorn border border-skim">9</div>
+                
+                <div class="col col-4 py1 bg-bluecorn border border-skim">4</div>
+                <div class="col col-8 py1 bg-bluecorn border border-skim">8</div>
+                
+                <div class="col col-5 py1 bg-bluecorn border border-skim">5</div>
+                <div class="col col-7 py1 bg-bluecorn border border-skim">7</div>
+                
+                <div class="col col-6 py1 bg-bluecorn border border-skim">6</div>
+                <div class="col col-6 py1 bg-bluecorn border border-skim">6</div>
+                
+                <div class="col col-7 py1 bg-bluecorn border border-skim">7</div>
+                <div class="col col-5 py1 bg-bluecorn border border-skim">5</div>
+                
+                <div class="col col-8 py1 bg-bluecorn border border-skim">8</div>
+                <div class="col col-4 py1 bg-bluecorn border border-skim">4</div>
+                
+                <div class="col col-9 py1 bg-bluecorn border border-skim">9</div>
+                <div class="col col-3 py1 bg-bluecorn border border-skim">3</div>
+                
+                <div class="col col-10 py1 bg-bluecorn border border-skim">10</div>
+                <div class="col col-2 py1 bg-bluecorn border border-skim">2</div>
+                
+                <div class="col col-11 py1 bg-bluecorn border border-skim">11</div>
+                <div class="col col-1 py1 bg-bluecorn border border-skim">1</div>
+                
+                <div class="col col-12 py1 bg-bluecorn border border-skim">12</div>
+            </div>
+
+            <h3 class="caps">Responsive Columns</h3>
+            <div class="clear my2 border center caps">
+                <div class="sm-col sm-col-6 md-col-4 lg-col-2">
+                    <div class="bg-bluecorn skim m1">First</div>
+                </div>
+                <div class="sm-col sm-col-6 md-col-4 lg-col-2">
+                    <div class="bg-bluecorn skim m1">Second</div>
+                </div>
+                <div class="sm-col sm-col-6 md-col-4 lg-col-2">
+                    <div class="bg-bluecorn skim m1">Third</div>
+                </div>
+                <div class="sm-col sm-col-6 md-col-4 lg-col-2">
+                    <div class="bg-bluecorn skim m1">Fourth</div>
+                </div>
+                <div class="sm-col sm-col-6 md-col-4 lg-col-2">
+                    <div class="bg-bluecorn skim m1">Fifth</div>
+                </div>
+                <div class="sm-col sm-col-6 md-col-4 lg-col-2">
+                    <div class="bg-bluecorn skim m1">Sixth</div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="whitespace"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-whitespace</h2>
+
+            <div class="my2">
+                <div class="sm-col sm-col-6 p1">
+                    <h3 class="caps">Margins</h3>
+
+                    <div class="center">
+                        <div class="clear border border-bluecorn my1 bg-white">
+                            <div class="bg-bluecorn skim m0">m0</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1 bg-white">
+                            <div class="bg-bluecorn skim m1">m1</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1 bg-white">
+                            <div class="bg-bluecorn skim m2">m2</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1 bg-white">
+                            <div class="bg-bluecorn skim m3">m3</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1 bg-white">
+                            <div class="bg-bluecorn skim m4">m4</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sm-col sm-col-6 p1">
+                    <h3 class="caps">Padding</h3>
+
+                    <div class="center">
+                        <div class="clear border border-bluecorn my1">
+                            <div class="bg-bluecorn skim p0">p0</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1">
+                            <div class="bg-bluecorn skim p1">p1</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1">
+                            <div class="bg-bluecorn skim p2">p2</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1">
+                            <div class="bg-bluecorn skim p3">p3</div>
+                        </div>
+                        <div class="clear border border-bluecorn my1">
+                            <div class="bg-bluecorn skim p4">p4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="layout"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-layout</h2>
+        </div>
+
+
+        <a name="flex"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-flex</h2>
+            <p class="ml1">Flex object support because I like to party and Flexbox is freakin awesome</p>
+
+            <div class="my2">
+                <div class="md-col md-col-6 p1">
+                    <h3 class="caps">Parent Controls</h3>
+
+                    <div class="m1">
+                        <div class="clear my2">
+                            <h4>Orientation</h4>
+                            <div class="clear my2 p1 border">
+                                <div class="md-col md-col-6 p1">
+                                    <div class="clear">.flex-row <span class="pestle italic size-sm">[default]</span></div>
+                                    <div class="border border-blade flex center">
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">1</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">2</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">3</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">4</div>
+                                    </div>
+                                </div>
+                                <div class="md-col md-col-6 p1">
+                                    <div class="clear">.flex-column</div>
+                                    <div class="border border-blade flex flex-column center">
+                                        <div class="m1 p1 bg-bluecorn skim">1</div>
+                                        <div class="m1 p1 bg-bluecorn skim">2</div>
+                                        <div class="m1 p1 bg-bluecorn skim">3</div>
+                                        <div class="m1 p1 bg-bluecorn skim">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear my2">
+                            <h4>Vertical Alignment</h4>
+                            <div class="clear my2 p1 border">
+                                
+                                <div class="md-col md-col-6 p1">
+                                    <div class="clear">.flex-stretch <span class="pestle italic size-sm">[default]</span></div>
+                                    <div class="border border-blade flex" style="height: 6em">
+                                        <div class="mx1 p1 bg-bluecorn flex-auto">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="md-col md-col-6 p1">
+                                    <div class="clear">.flex-center</div>
+                                    <div class="border border-blade flex flex-center" style="height: 6em">
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 3em">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 2em">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 4em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="md-col md-col-6 p1">
+                                    <div class="clear">.flex-start</div>
+                                    <div class="border border-blade flex flex-start" style="height: 6em">
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 3em">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 2em">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 4em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="md-col md-col-6 p1">
+                                    <div class="clear">.flex-end</div>
+                                    <div class="border border-blade flex flex-end" style="height: 6em">
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 3em">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 2em">&nbsp;</div>
+                                        <div class="mx1 p1 bg-bluecorn flex-auto" style="height: 4em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="md-col md-col-12 p1">
+                                    <div class="clear">.flex-baseline</div>
+                                    <div class="border border-blade flex flex-baseline center" style="height: 100px">
+                                        <div class="mx1 p1 bg-bluecorn skim flex-auto size-sm" style="height: 60px">Text</div>
+                                        <div class="mx1 p1 bg-bluecorn skim flex-auto size-xs" style="height: 40px">Text</div>
+                                        <div class="mx1 p1 bg-bluecorn skim flex-auto size-lg" style="height: 50px">Text</div>
+                                        <div class="mx1 p1 bg-bluecorn skim flex-auto" style="height: 80px">Text</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="clear my2">
+                            <h4>Horizontal Alignment</h4>
+                            <div class="my2 p1 border">
+                                <div class="clear">
+                                    <div class="clear">.flex-just-start <span class="pestle italic size-sm">[default]</span></div>
+                                    <div class="my1 p1 border border-blade flex">
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 5em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 3em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 8em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-just-end</div>
+                                    <div class="my1 p1 border border-blade flex flex-just-end">
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 5em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 3em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 8em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-just-center</div>
+                                    <div class="my1 p1 border border-blade flex flex-just-center">
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 5em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 3em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 8em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-just-between</div>
+                                    <div class="my1 p1 border border-blade flex flex-just-between">
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 5em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 3em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 8em">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-just-around</div>
+                                    <div class="my1 p1 border border-blade flex flex-just-around">
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 5em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 3em">&nbsp;</div>
+                                        <div class="m1 px2 py1 bg-bluecorn" style="width: 8em">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear my2">
+                            <h4>Wrapping</h4>
+                            <div class="clear">Resize your browser window to see this one working</div>
+                            <div class="my2 p1 border">
+                                <div class="clear">
+                                    <div class="clear">.flex-nowrap <span class="pestle italic size-sm">[default]</span></div>
+                                    <div class="my1 p1 border border-blade flex over-hidden">
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+
+                                    </div>
+                                </div>
+                                <div class="clear">
+                                    <div class="clear">.flex-wrap</div>
+                                    <div class="my1 p1 border border-blade flex flex-wrap over-hidden">
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                        <div class="m1 p2 bg-bluecorn">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="md-col md-col-6 p1">
+                    <h3 class="caps">Child controls</h3>
+
+                    <div class="m1">
+                        <div class="clear my2">
+                            <h4>Ordering overrides</h4>
+                            <div class="clear my2 p1 border">
+                                <div class="clear flex">
+                                    <div class="pl1 flex-auto pepper">.flex-first</div>
+                                    <div class="pr1 flex-auto right strawberry">.flex-last</div>
+                                </div>
+                                <div class="my1 border border-blade flex center">
+                                    <div class="m1 px2 py1 skim bg-bluecorn flex-auto">1</div>
+                                    <div class="m1 px2 py1 skim bg-bluecorn flex-auto">2</div>
+                                    <div class="m1 px2 py1 skim bg-strawberry flex-last flex-auto">3</div>
+                                    <div class="m1 px2 py1 skim bg-pepper flex-first flex-auto">4</div>
+                                    <div class="m1 px2 py1 skim bg-bluecorn flex-auto">5</div>
+                                    <div class="m1 px2 py1 skim bg-bluecorn flex-auto">6</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear my2">
+                            <h4>Grow/Shrink behavior</h4>
+                            <div class="clear my2 p1 border">
+                                <div class="clear">
+                                    <div class="clear">.flex-shrink <span class="pestle italic size-sm">[default]</span></div>
+                                    <div class="clear border border-blade flex center">
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn flex-shrink">.flex-shrink</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-grow</div>
+                                    <div class="clear border border-blade flex center">
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn flex-grow">.flex-grow</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                    </div>
+                                </div>
+                                <div class="clear">
+                                    <div class="clear">.flex-auto</div>
+                                    <div class="clear border border-blade flex center">
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn flex-auto">.flex-auto</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-none</div>
+                                    <div class="clear border border-blade flex center">
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn flex-none">.flex-none</div>
+                                        <div class="m1 px2 py1 skim bg-bluecorn">Text</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clear my2">
+                            <h4>Vertical alignment overrides</h4>
+                            <div class="clear my2 p1 border">
+                                <div class="clear">
+                                    <div class="clear">.flex-self-start</div>
+                                    <div class="clear border border-blade flex flex-end center" style="height: 6em">
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto flex-self-start">hey</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-self-end</div>
+                                    <div class="clear border border-blade flex flex-start center" style="height: 6em">
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto flex-self-end">no</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-self-center</div>
+                                    <div class="clear border border-blade flex center" style="height: 6em">
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto flex-self-center">wut</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-self-baseline</div>
+                                    <div class="clear border border-blade flex flex-center center" style="height: 6em">
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto flex-self-baseline">stahp</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="clear my2">
+                                    <div class="clear">.flex-self-stretch</div>
+                                    <div class="clear border border-blade flex flex-end center" style="height: 6em">
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto">&nbsp;</div>
+                                        <div class="m1 p1 bg-bluecorn skim flex-auto flex-self-stretch">srsly</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <a name="responsive"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-responsive</h2>
+            <p class="ml1">Show and hide elements at various breakpoints</p>
+            
+            <div class="clear my2 p1 sm-show bg-bluecorn skim">This will show only above the small breakpoint</div>
+            <div class="clear my2 p1 md-show bg-bluecorn skim">This will show only above the medium breakpoint</div>
+            <div class="clear my2 p1 lg-show bg-bluecorn skim">This will show only above the large breakpoint</div>
+
+            <div class="clear my2 p1 sm-hide bg-blueberry skim right">This will show only below the small breakpoint</div>
+            <div class="clear my2 p1 md-hide bg-blueberry skim right">This will show only below the medium breakpoint</div>
+            <div class="clear my2 p1 lg-hide bg-blueberry skim right">This will show only below the large breakpoint</div>
+        </div>
+
+
+        <a name="typography-defaults"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-typography-defaults</h2>
+
+            <div class="my2">
+                <div class="md-col md-col-4 p1">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h1>
+                    <h3>Heading 3</h1>
+                    <h4>Heading 4</h1>
+                    <h5>Heading 5</h1>
+                    <h6>Heading 6</h1>
+                </div>
+                <div class="md-col md-col-8 p1 pt3">
+                    <div class="clear">
+                        <p>Here's a whole bunch of text to demonstrate the default behavior of &lt;p&gt; text. <span class="bold">overeasy-config</span> also includes a Measure setting to optimize the maximum width of paragraph text blocks. Nifty, huh?</p>
+                        <p>Paragraphs will include some trailing space automatically, and this block of text demonstrates the default font-size and line-height settings. All of this is configurable in <span class="bold">overeasy-config</span> to your heart's content. You can also use any other utilities inline to customize on the fly.</p>
+                    </div>
+                    <div class="clear">
+                        <div class="md-col md-col-6 p1">
+                            <ol>
+                                <li>Here&apos;s a thing</li>
+                                <li>Here&apos;s another thing</li>
+                                <li>This thing has sub-things
+                                    <ol>
+                                        <li>Sub-thing the first</li>
+                                        <li>Further sub-things</li>
+                                        <li>Sub-thing special</li>
+                                    </ol>
+                                </li>
+                                <li>This thing has unordered sub-things
+                                    <ul>
+                                        <li>Such a mess</li>
+                                        <li>These things are everywhere</li>
+                                        <li>Get it together, man</li>
+                                    </ul>
+                                </li>
+                                <li>A final thing, to wrap it all up</li>
+                            </ol>
+                        </div>
+                        <div class="md-col md-col-6 p1">
+                            <ul>
+                                <li>Ok, now this is ridiculous</li>
+                                <li>Unordered things all askew</li>
+                                <li>Unrdered sub-things
+                                    <ul>
+                                        <li>One random thing</li>
+                                        <li>Another thing, predictably</li>
+                                        <li>One good sub-thing deserves another</li>
+                                    </ul>
+                                </li>
+                                <li>Wait, there is hope!
+                                    <ol>
+                                        <li>Order in the chaos</li>
+                                        <li>Finally some semblance of organization</li>
+                                        <li>Gone as quickly as it came</li>
+                                    </ol>
+                                </li>
+                                <li>That&apos;s about enough of that</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear my2">
+                <h3 class="caps">Code blocks</h3>
+                <code class="block p1 bg-toaster">
+                    <span class="pestle">// Code and Pre styling, extensible by other utilities</span><br/>
+                    <span class="apple">&lt;element&gt;</span>
+                    <span class="pepper">value</span>
+                    <span class="apple">&lt;/element&gt;</span>
+                </code>
+            </div>
+        </div>
+
+        
+        <a name="typography-utilities"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-typography-utilities</h2>
+        
+            <div class="my2 p1">
+                <h3 class="caps">Character Styles</h3>
+                <div class="p1 flex flex-wrap">
+                    <div class="m1 p1 regular">.regular <span class="pestle">[Default]</span></div>
+                    <div class="m1 p1 italic">.italic</div>
+                    <div class="m1 p1">
+                        <span class="caps">caps</span>&nbsp;
+                        <span class="pestle">(.caps)</span>
+                    </div>
+                    <div class="m1 p1 bold">.bold</div>
+                    <div class="m1 p1 strong">.strong</div>
+                    <div class="m1 p1 heavy">.heavy</div>
+                </div>
+            </div>
+
+            <div class="my2 p1">
+                <h3 class="caps">Font stack overrides</h3>
+                <div class="p1">
+                    <div class="m1 p1">
+                        <h2>h2 normal</h2>
+                        <h2 class="font-body">h2 with .font-body</h2>
+                    </div>
+                    <div class="m1 p1 pt3 size-lg">
+                        <p>Body text normal</p>
+                        <p class="font-head">Body text with .font-head</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my2 p1">
+                <h3 class="caps">Text Alignment</h3>
+                <div class="p1 md-flex">
+                    <div class="m1 p1 flex-auto">
+                        <div class="clear">
+                            .left &nbsp;
+                            <span class="pestle">[Default]</span><br>
+                        </div>
+                        <div class="px2 py1 border border-blade left">
+                            The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                        </div>
+                    </div>
+                    <div class="m1 p1 flex-auto">
+                        <div class="clear">.center</div>
+                        <div class="px2 py1 border border-blade center">
+                            The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                        </div>
+                    </div>
+                    <div class="m1 p1 flex-auto">
+                        <div class="clear">.right</div>
+                        <div class="px2 py1 border border-blade right">
+                            The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                        </div>
+                    </div>
+                    <div class="m1 p1 flex-auto">
+                        <div class="clear">.justify</div>
+                        <div class="px2 py1 border border-blade justify">
+                            The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="backgrounds"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-backgrounds</h2>
+            <p>Utilities for background image controls</p>
+            <p>Images courtesy of <a href="http://spacetelescope.org" target="_blank">The Hubble Space Telescope</a>. Because science.</p>
+            
+            <div class="my2 p1">
+                <div class="clear">
+                    <h3 class="caps">Position</h3>
+                    <div class="clear">
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-left</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-left" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-center</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-center" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-right</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-right" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-top-left</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-top-left" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-top</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-top" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-top-right</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-top-right" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-bottom-left</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-bottom-left" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-bottom</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-bottom" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                        <div class="col col-6 sm-col-4">
+                            <div class="clear ml1">.bg-bottom-right</div>
+                            <div class="m1 border border-pestle bg-no-repeat bg-bottom-right" 
+                                style="height: 10em; background-image: url('img/space1.jpg');">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Size</h3>
+                    <div class="clear">
+                        <div class="sm-col sm-col-6 p1">
+                            <div class="clear">.bg-contain</div>
+                            <div class="border border-pestle bg-no-repeat bg-contain"
+                                style="height: 10em; background-image: url('img/space2.jpg')">&nbsp;</div>
+                        </div>
+                        <div class="sm-col sm-col-6 p1">
+                            <div class="clear">.bg-cover</div>
+                            <div class="border border-pestle bg-no-repeat bg-cover"
+                                style="height: 10em; background-image: url('img/space2.jpg')">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Repeat</h3>
+                    <div class="clear">
+                        <div class="sm-col sm-col-4 p1">
+                            <div class="clear">.bg-repeat-x</div>
+                            <div class="border border-pestle bg-repeat-x"
+                                style="height: 10em; background-image: url('img/space3.jpg')">&nbsp;</div>
+                        </div>
+                        <div class="sm-col sm-col-4 p1">
+                            <div class="clear">.bg-repeat-y</div>
+                            <div class="border border-pestle bg-repeat-y"
+                                style="height: 10em; background-image: url('img/space3.jpg')">&nbsp;</div>
+                        </div>
+                        <div class="sm-col sm-col-4 p1">
+                            <div class="clear">.bg-no-repeat</div>
+                            <div class="border border-pestle bg-no-repeat"
+                                style="height: 10em; background-image: url('img/space3.jpg')">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Attachment</h3>
+                    <div class="clear p1">
+                        <div class="clear">.bg-fixed</div>
+                        <div class="border border-pestle bg-fixed"
+                            style="height: 10em; background-image: url('img/space4.jpg')">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="borders"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-borders</h2>
+        
+            <div class="clear my2">
+                <div class="sm-col sm-col-4 p1">
+                    <div class="border p2 bold center">.border</div>
+                </div>
+                <div class="sm-col sm-col-4 p1">
+                    <div class="border rounded p2 bold center">.border.rounded</div>
+                </div>
+                <div class="sm-col sm-col-4 p1">
+                    <div class="border-heavy p2 bold center">.border-heavy</div>
+                </div>
+            </div>
+            <div class="clear my2">
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-left p1 bold center">.border-left</div>
+                </div>
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-top p1 bold center">.border-top</div>
+                </div>
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-bottom p1 bold center">.border-bottom</div>
+                </div>
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-right p1 bold center">.border-right</div>
+                </div>
+            </div>
+            <div class="clear my2">
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-heavy-left p1 bold center">.border-heavy-left</div>
+                </div>
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-heavy-top p1 bold center">.border-heavy-top</div>
+                </div>
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-heavy-bottom p1 bold center">.border-heavy-bottom</div>
+                </div>
+                <div class="col col-6 sm-col-3 p1">
+                    <div class="border-heavy-right p1 bold center">.border-heavy-right</div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="buttons"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-buttons</h2>
+        
+            <div class="clear my2">
+                <p>Buttons work when defined as links, inputs, or buttons</p>
+                <div class="clear center flex flex-wrap">
+                    <a href="#!" class="button">a.button</a>
+                    <input type="button" class="button" value="input.button" />
+                    <button>button</button>
+                    <button class="disabled">button.disabled</button>
+                </div>
+            </div>
+            <div class="clear my2">
+                <p>A standard button style is defined for simply re-use</p>
+                <div class="clear center flex flex-wrap">
+                    <a href="#!" class="btn">a.btn</a>
+                    <input type="button" class="btn" value="input.btn" />
+                    <button class="btn">button.btn</button>
+                </div>
+            </div>
+            <div class="clear my2">
+                <p>Extend button with other color utilities</p>
+                <div class="clear center flex flex-wrap">
+                    <button class="bg-chive">button.bg-chive</button>
+                    <button class="bg-krispie">button.bg-krispie</button>
+                    <button class="skim bg-toast">button.skim.bg-toast</button>
+                    <button class="skim bg-apple">button.skim.bg-apple</button>
+                    <button class="bg-skim apple hover-banana hover-bg-gouda">button.apple.bg-skim.hover-bg-gouda.hover-banana</button>
+                </div>
+            </div>
+            <div class="clear my2">
+                <p>Using the .inverted class will apply a transparent background and match the border to the text color. 
+                    Changing the text color will also change the border color.</p>
+                <div class="clear center flex flex-wrap">
+                    <button class="inverted">button.inverted</button>
+                    <button class="inverted strawberry">button.inverted.strawberry</button>
+                    <button class="inverted krispie hover-gouda hover-bg-krispie">button.inverted.krispie.hover-gouda.hover-bg-krispie</button>
+                </div>
+            </div>
+        </div>
+
+        <a name="text-colors"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-text-colors</h2>
+
+            <div class="clear p1">
+                <div class="clear my2">
+                    <div class="m1 p1 size-lg strong">Default Color</div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Utilities</h3>
+                    <div class="my2 flex flex-wrap">
+                        <div class="m1 p1 size-lg strong faded">.faded</div>
+                    </div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Text colors</h3>
+                    <p>Autogenerated from the <span class="bold">$colors</span> map in <span class="bold">overeasy-config</span></p>
+                    <div class="clear p1 center flex flex-wrap">
+                        <div class="m1 p1 size-lg strong flex-auto grapefruit">.grapefruit</div>
+                        <div class="m1 p1 size-lg strong flex-auto tomato">.tomato</div>
+                        <div class="m1 p1 size-lg strong flex-auto strawberry">.strawberry</div>
+                        <div class="m1 p1 size-lg strong flex-auto apple">.apple</div>
+                        <div class="m1 p1 size-lg strong flex-auto banana">.banana</div>
+                        <div class="m1 p1 size-lg strong flex-auto yolk">.yolk</div>
+                        <div class="m1 p1 size-lg strong flex-auto gouda">.gouda</div>
+                        <div class="m1 p1 size-lg strong flex-auto toast">.toast</div>
+                        <div class="m1 p1 size-lg strong flex-auto chive">.chive</div>
+                        <div class="m1 p1 size-lg strong flex-auto pepper">.pepper</div>
+                        <div class="m1 p1 size-lg strong flex-auto krispie">.krispie</div>
+                        <div class="m1 p1 size-lg strong flex-auto milkcap">.milkcap</div>
+                        <div class="m1 p1 size-lg strong flex-auto blueberry">.blueberry</div>
+                        <div class="m1 p1 size-lg strong flex-auto bluecorn">.bluecorn</div>
+                        <div class="m1 p1 size-lg strong flex-auto skim bg-blade">.skim</div>
+                        <div class="m1 p1 size-lg strong flex-auto toaster">.toaster</div>
+                        <div class="m1 p1 size-lg strong flex-auto blade">.blade</div>
+                        <div class="m1 p1 size-lg strong flex-auto pestle">.pestle</div>
+                        <div class="m1 p1 size-lg strong flex-auto white bg-blade">.white</div>
+                        <div class="m1 p1 size-lg strong flex-auto black">.black</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="hover-text-colors"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-hover-text-colors</h2>
+            <p>Autogenerated from the <span class="bold">$colors</span> map in <span class="bold">overeasy-config</span></p>
+
+            <div class="clear p1 center flex flex-wrap">
+                <div class="m1 p1 size-lg strong flex-auto hover-grapefruit">.hover-grapefruit</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-tomato">.hover-tomato</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-strawberry">.hover-strawberry</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-apple">.hover-apple</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-banana">.hover-banana</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-yolk">.hover-yolk</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-gouda">.hover-gouda</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-toast">.hover-toast</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-chive">.hover-chive</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-pepper">.hover-pepper</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-krispie">.hover-krispie</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-milkcap">.hover-milkcap</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-blueberry">.hover-blueberry</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-bluecorn">.hover-bluecorn</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-skim">.hover-skim</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-toaster">.hover-toaster</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-blade">.hover-blade</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-pestle">.hover-pestle</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-white">.hover-white</div>
+                <div class="m1 p1 size-lg strong flex-auto hover-black">.hover-black</div>
+            </div>
+        </div>
+
+        
+        <a name="bg-colors"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-bg-colors</h2>
+        
+            <div class="clear my2 p1">
+                <div class="clear">
+                    <h3 class="caps">Colors</h3>
+                    <p>Autogenerated from the <span class="bold">$colors</span> map in <span class="bold">overeasy-config</span></p>
+                    <div class="clear center flex flex-wrap">
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-grapefruit">.bg-grapefruit</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-tomato">.bg-tomato</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-strawberry">.bg-strawberry</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-apple">.bg-apple</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-banana">.bg-banana</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-yolk">.bg-yolk</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-gouda">.bg-gouda</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-toast">.bg-toast</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-chive">.bg-chive</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-pepper">.bg-pepper</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-krispie">.bg-krispie</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-milkcap">.bg-milkcap</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-blueberry">.bg-blueberry</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-bluecorn">.bg-bluecorn</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-skim">.bg-skim</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-toaster">.bg-toaster</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-blade">.bg-blade</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-pestle">.bg-pestle</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-white">.bg-white</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-black">.bg-black</div>
+                    </div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Light/Dark Opacity Filters</h3>
+                    <div class="clear center p2 flex flex-wrap bg-white">
+                        <div class="m1 p1 bold flex-auto border border-blade bg-dark-1">.bg-dark-1</div>
+                        <div class="m1 p1 bold flex-auto border border-blade bg-dark-2">.bg-dark-2</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-dark-3">.bg-dark-3</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-dark-4">.bg-dark-4</div>
+                        <div class="m1 p1 bold flex-auto border border-blade skim bg-dark-5">.bg-dark-5</div>
+                    </div>
+                    <div class="clear center p2 flex flex-wrap skim bg-black">
+                        <div class="m1 p1 flex-auto border border-blade bg-light-1">.bg-light-1</div>
+                        <div class="m1 p1 flex-auto border border-blade bg-light-2">.bg-light-2</div>
+                        <div class="m1 p1 flex-auto border border-blade bg-light-3">.bg-light-3</div>
+                        <div class="m1 p1 flex-auto border border-blade bg-light-4">.bg-light-4</div>
+                        <div class="m1 p1 flex-auto border border-blade bg-light-5">.bg-light-5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a name="hover-bg-colors"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-hover-bg-colors</h2>
+            <p>Autogenerated from the <span class="bold">$colors</span> map in <span class="bold">overeasy-config</span></p>
+            
+            <div class="clear my2 p1">
+                <div class="clear">
+                    <h3 class="caps">Colors</h3>
+                    <div class="clear center flex flex-wrap">
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-grapefruit">.hover-bg-grapefruit</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-tomato">.hover-bg-tomato</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-strawberry">.hover-bg-strawberry</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-apple">.hover-bg-apple</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-banana">.hover-bg-banana</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-yolk">.hover-bg-yolk</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-gouda">.hover-bg-gouda</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-toast">.hover-bg-toast</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-chive">.hover-bg-chive</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-pepper">.hover-bg-pepper</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-krispie">.hover-bg-krispie</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-milkcap">.hover-bg-milkcap</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-blueberry">.hover-bg-blueberry</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-bluecorn">.hover-bg-bluecorn</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-skim">.hover-bg-skim</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-toaster">.hover-bg-toaster</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-blade">.hover-bg-blade</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-pestle">.hover-bg-pestle</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-white">.hover-bg-white</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-black">.hover-bg-black</div>
+                    </div>
+                </div>
+
+                <div class="clear my2">
+                    <h3 class="caps">Light/Dark Opacity Filters</h3>
+                    <div class="clear center p2 flex flex-wrap bg-white">
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-dark-1">.hover-bg-dark-1</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-dark-2">.hover-bg-dark-2</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-dark-3">.hover-bg-dark-3</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-dark-4">.hover-bg-dark-4</div>
+                        <div class="m1 p1 bold flex-auto border border-blade hover-bg-dark-5">.hover-bg-dark-5</div>
+                    </div>
+                    <div class="clear center p2 flex flex-wrap skim bg-black">
+                        <div class="m1 p1 flex-auto border border-blade hover-bg-light-1">.hover-bg-light-1</div>
+                        <div class="m1 p1 flex-auto border border-blade hover-bg-light-2">.hover-bg-light-2</div>
+                        <div class="m1 p1 flex-auto border border-blade hover-bg-light-3">.hover-bg-light-3</div>
+                        <div class="m1 p1 flex-auto border border-blade hover-bg-light-4">.hover-bg-light-4</div>
+                        <div class="m1 p1 flex-auto border border-blade hover-bg-light-5">.hover-bg-light-5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <a name="border-colors"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-border-colors</h2>
+            <p>Autogenerated from the <span class="bold">$colors</span> map in <span class="bold">overeasy-config</span></p>
+            <p>These will only change the border-color, so declare them in addition to whatever combination of the above <span class="bold">overeasy-borders</span> utilities you are using.</p>
+            
+            <div class="clear my2 p1 center flex flex-wrap">
+                <div class="m1 p1 bold flex-auto border border-grapefruit">.border-grapefruit</div>
+                <div class="m1 p1 bold flex-auto border border-tomato">.border-tomato</div>
+                <div class="m1 p1 bold flex-auto border border-strawberry">.border-strawberry</div>
+                <div class="m1 p1 bold flex-auto border border-apple">.border-apple</div>
+                <div class="m1 p1 bold flex-auto border border-banana">.border-banana</div>
+                <div class="m1 p1 bold flex-auto border border-yolk">.border-yolk</div>
+                <div class="m1 p1 bold flex-auto border border-gouda">.border-gouda</div>
+                <div class="m1 p1 bold flex-auto border border-toast">.border-toast</div>
+                <div class="m1 p1 bold flex-auto border border-chive">.border-chive</div>
+                <div class="m1 p1 bold flex-auto border border-pepper">.border-pepper</div>
+                <div class="m1 p1 bold flex-auto border border-krispie">.border-krispie</div>
+                <div class="m1 p1 bold flex-auto border border-milkcap">.border-milkcap</div>
+                <div class="m1 p1 bold flex-auto border border-blueberry">.border-blueberry</div>
+                <div class="m1 p1 bold flex-auto border border-bluecorn">.border-bluecorn</div>
+                <div class="m1 p1 bold flex-auto border border-skim">.border-skim</div>
+                <div class="m1 p1 bold flex-auto border border-toaster">.border-toaster</div>
+                <div class="m1 p1 bold flex-auto border border-blade">.border-blade</div>
+                <div class="m1 p1 bold flex-auto border border-pestle">.border-pestle</div>
+                <div class="m1 p1 bold flex-auto border border-white">.border-white</div>
+                <div class="m1 p1 bold flex-auto border border-black">.border-black</div>
+            </div>
+        </div>
+
+
+        <a name="hover-border-colors"></a>
+        <div class="clear container my2 pt2 border-top border-toaster">
+            <h2>overeasy-hover-border-colors</h2>
+            <p>&quot;Hover border&quot; sounds super rad. Just saying.</p>
+            
+            <div class="clear my2">
+                <h3 class="caps">Colors</h3>
+                <div class="clear center flex flex-wrap">
+                    <div class="m1 p1 bold flex-auto border hover-border-grapefruit">.hover-border-grapefruit</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-tomato">.hover-border-tomato</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-strawberry">.hover-border-strawberry</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-apple">.hover-border-apple</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-banana">.hover-border-banana</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-yolk">.hover-border-yolk</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-gouda">.hover-border-gouda</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-toast">.hover-border-toast</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-chive">.hover-border-chive</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-pepper">.hover-border-pepper</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-krispie">.hover-border-krispie</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-milkcap">.hover-border-milkcap</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-blueberry">.hover-border-blueberry</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-bluecorn">.hover-border-bluecorn</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-skim">.hover-border-skim</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-toaster">.hover-border-toaster</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-blade">.hover-border-blade</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-pestle">.hover-border-pestle</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-white">.hover-border-white</div>
+                    <div class="m1 p1 bold flex-auto border hover-border-black">.hover-border-black</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my4">&nbsp;</div>
+    </div>
+
+</body>
+</html>

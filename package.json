@@ -1,0 +1,33 @@
+{
+  "name": "overeasy.github.io",
+  "version": "1.0.0",
+  "description": "Documentation site for OverEasy",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overeasy-css/overeasy.github.io.git"
+  },
+  "keywords": [
+    "CSS",
+    "OOCSS",
+    "OverEasy",
+    "sass",
+    "scss",
+    "gulp"
+  ],
+  "author": "Zach Saffrin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/overeasy-css/overeasy.github.io/issues"
+  },
+  "homepage": "https://overeasy.github.io",
+  "dependencies": {
+    "overeasy": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.0"
+  }
+}
