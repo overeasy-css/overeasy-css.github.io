@@ -1,0 +1,141 @@
+
+<div class="p2 mb2">
+    <h1 class="size-xxl yellow">OverEasy</h1>
+    <h2 class="h1 yellow-darker">Grid</h2>
+</div>
+    
+<div class="container p2">
+    <div class="mb4">
+        <h3>Column size utilities</h3>
+        <p>Column sizes are expressed as portions of the total number. There are 12 columns by default, but the number of columns can be changed to any number and the distribution logic works the same. Widths are defined as percentages of the total, so the whole system is inherently nestable.</p>
+
+        <p>To keep things organized, sections of floated columns should be in a <span class="code">.clear</span> wrapper.</p>
+        <div class="clear mb1">
+            <div class="col col-1 white bg-blue-dark border p1 size-sm bold center">1</div>
+            <div class="col col-11 white bg-blue-dark border p1 size-sm bold center">11</div>
+            
+            <div class="col col-2 white bg-blue-dark border p1 size-sm bold center">2</div>
+            <div class="col col-10 white bg-blue-dark border p1 size-sm bold center">10</div>
+        
+            <div class="col col-3 white bg-blue-dark border p1 size-sm bold center">3</div>
+            <div class="col col-9 white bg-blue-dark border p1 size-sm bold center">9</div>
+        
+            <div class="col col-4 white bg-blue-dark border p1 size-sm bold center">4</div>
+            <div class="col col-8 white bg-blue-dark border p1 size-sm bold center">8</div>
+        
+            <div class="col col-5 white bg-blue-dark border p1 size-sm bold center">5</div>
+            <div class="col col-7 white bg-blue-dark border p1 size-sm bold center">7</div>
+        
+            <div class="col col-6 white bg-blue-dark border p1 size-sm bold center">6</div>
+            <div class="col col-6 white bg-blue-dark border p1 size-sm bold center">6</div>
+        
+            <div class="col col-12 white bg-blue-dark border p1 size-sm bold center">12</div>
+        </div>
+        <div class="code">
+            <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">clear</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+        
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-1</span><span class="attribute">&quot;</span><span class="element">&gt;</span>1<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-11</span><span class="attribute">&quot;</span><span class="element">&gt;</span>11<span class="element">&lt;/div&gt;</span><br/>
+                <br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>2<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-10</span><span class="attribute">&quot;</span><span class="element">&gt;</span>10<span class="element">&lt;/div&gt;</span><br/>
+                <br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-3</span><span class="attribute">&quot;</span><span class="element">&gt;</span>3<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-9</span><span class="attribute">&quot;</span><span class="element">&gt;</span>9<span class="element">&lt;/div&gt;</span><br/>
+                <br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-4</span><span class="attribute">&quot;</span><span class="element">&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-8</span><span class="attribute">&quot;</span><span class="element">&gt;</span>8<span class="element">&lt;/div&gt;</span><br/>
+                <br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-5</span><span class="attribute">&quot;</span><span class="element">&gt;</span>5<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-7</span><span class="attribute">&quot;</span><span class="element">&gt;</span>7<span class="element">&lt;/div&gt;</span><br/>
+                <br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-6</span><span class="attribute">&quot;</span><span class="element">&gt;</span>6<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-6</span><span class="attribute">&quot;</span><span class="element">&gt;</span>6<span class="element">&lt;/div&gt;</span><br/>
+                <br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-12</span><span class="attribute">&quot;</span><span class="element">&gt;</span>12<span class="element">&lt;/div&gt;</span><br/>
+        
+            <span class="element">&lt;/div&gt;</span>
+        </div>
+    </div>
+
+    <div class="mb4">
+        <h3>Floating</h3>
+        <p>To make the columns act like columns, they should be floated. Use <span class="code">.col</span> to float left and <span class="code">.col-right</span> to float right. As long as you clear your rows, your columns don't need to equal 100% and you can float in one or both directions.</p>
+        <div class="mb1">
+            <div class="clear">
+                <div class="col col-1 white bg-blue-dark border p1 size-sm bold center">1</div>
+                <div class="col col-2 white bg-blue-dark border p1 size-sm bold center">2</div>
+                <div class="col-right col-5 white bg-blue-dark border p1 size-sm bold center">5</div>
+            </div>
+            <div class="clear">
+                <div class="col-right col-4 white bg-blue-dark border p1 size-sm bold center">4</div>
+                <div class="col-right col-3 white bg-blue-dark border p1 size-sm bold center">3</div>
+            </div>
+            <div class="clear">
+                <div class="col col-2 white bg-blue-dark border p1 size-sm bold center">2</div>
+                <div class="col col-4 white bg-blue-dark border p1 size-sm bold center">4</div>
+                <div class="col-right col-4 white bg-blue-dark border p1 size-sm bold center">4</div>
+            </div>
+        </div>
+        <div class="code">
+            <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">clear</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-1</span><span class="attribute">&quot;</span><span class="element">&gt;</span>1<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>2<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col-right col-5</span><span class="attribute">&quot;</span><span class="element">&gt;</span>5<span class="element">&lt;/div&gt;</span><br/>
+
+            <span class="element">&lt;/div&gt;</span><br/>
+            
+            <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">clear</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col-right col-4</span><span class="attribute">&quot;</span><span class="element">&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col-right col-3</span><span class="attribute">&quot;</span><span class="element">&gt;</span>3<span class="element">&lt;/div&gt;</span><br/>
+
+            <span class="element">&lt;/div&gt;</span><br/>
+
+            <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">clear</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>2<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col col-4</span><span class="attribute">&quot;</span><span class="element">&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">col-right col-4</span><span class="attribute">&quot;</span><span class="element">&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+
+            <span class="element">&lt;/div&gt;</span>
+        </div>
+    </div>
+
+    <div class="mb4">
+        <h3>Responsive resizing</h3>
+        <p>OverEasy is a mobile-first grid, meaning the default behaviors apply at the smallest display size. Small, medium, and large grid behaviors will kick in above their corresponding breakpoints. Resize your browser to see this working.</p>
+        <p>
+            In this example:
+            <ul>
+                <li>By default, or at smallest display, divs will be full-width, so no default float needed</li>
+                <li>Above the Small breakpoint, divs are halfs width (6 of 12 columns) and should float left from here up.</li>
+                <li>Above the Medium breakpoint, divs are thirds width (4 of 12 columns). Float is inherited.</li>
+                <li>Above the Large breakpoint, divs are sixths width (2 of 12 columns). Float is inherited.</li>
+            </ul>
+        </p>
+        <div class="clear mb1">
+            <div class="sm-col sm-col-6 md-col-4 lg-col-2 p1 white bg-blue-dark size-sm center caps border">First</div>
+            <div class="sm-col sm-col-6 md-col-4 lg-col-2 p1 white bg-blue-dark size-sm center caps border">Second</div>
+            <div class="sm-col sm-col-6 md-col-4 lg-col-2 p1 white bg-blue-dark size-sm center caps border">Third</div>
+            <div class="sm-col sm-col-6 md-col-4 lg-col-2 p1 white bg-blue-dark size-sm center caps border">Fourth</div>
+            <div class="sm-col sm-col-6 md-col-4 lg-col-2 p1 white bg-blue-dark size-sm center caps border">Fifth</div>
+            <div class="sm-col sm-col-6 md-col-4 lg-col-2 p1 white bg-blue-dark size-sm center caps border">Sixth</div>
+        </div>
+        <div class="code">
+            <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">clear</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">sm-col sm-col-6 md-col-4 lg-col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>First<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">sm-col sm-col-6 md-col-4 lg-col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>Second<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">sm-col sm-col-6 md-col-4 lg-col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>Third<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">sm-col sm-col-6 md-col-4 lg-col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>Fourth<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">sm-col sm-col-6 md-col-4 lg-col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>Fifth<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">sm-col sm-col-6 md-col-4 lg-col-2</span><span class="attribute">&quot;</span><span class="element">&gt;</span>Sixth<span class="element">&lt;/div&gt;</span><br/>
+
+            <span class="element">&lt;/div&gt;</span>
+        </div>
+    </div>
+    
+</div>
+

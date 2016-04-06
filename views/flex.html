@@ -1,0 +1,542 @@
+
+<div class="p2 mb2">
+    <h1 class="size-xxl yellow">OverEasy</h1>
+    <h2 class="h1 yellow-darker">Flex</h2>
+</div>
+
+<div class="container p2">
+    <div class="mb4">
+        <h3>Parent Classes</h3>
+        <p class="mb3">Get started by declaring a Flex parent with the <span class="code">.flex</span> class.</p>
+
+        <h4>Orientation</h4>
+        <div class="p1 mb3">
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Row <span class="light italic gray-dark">[default]</span></div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="m1 p1 bg-blue-dark white flex-grow center">1</div>
+                        <div class="m1 p1 bg-blue-dark white flex-grow center">2</div>
+                        <div class="m1 p1 bg-blue-dark white flex-grow center">3</div>
+                        <div class="m1 p1 bg-blue-dark white flex-grow center">4</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>1<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>2<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>3<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Column</div>
+                    <div class="border border-gray-light flex flex-column mb1">
+                        <div class="m1 p1 bg-blue-dark white center">1</div>
+                        <div class="m1 p1 bg-blue-dark white center">2</div>
+                        <div class="m1 p1 bg-blue-dark white center">3</div>
+                        <div class="m1 p1 bg-blue-dark white center">4</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-column</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>1<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>2<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>3<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Vertical position</h4>
+        <div class="p1 mb3">
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Stretch <span class="light italic gray-dark">[default]</span></div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="bg-blue-dark py3 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py2 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py4 m1 flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py3</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py4</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Center</div>
+                    <div class="border border-gray-light flex flex-center mb1">
+                        <div class="bg-blue-dark py3 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py2 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py4 m1 flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-center</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py3</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py4</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Start</div>
+                    <div class="border border-gray-light flex flex-start mb1">
+                        <div class="bg-blue-dark py3 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py2 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py4 m1 flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-start</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py3</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py4</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">End</div>
+                    <div class="border border-gray-light flex flex-end mb1">
+                        <div class="bg-blue-dark py3 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py2 m1 flex-grow"></div>
+                        <div class="bg-blue-dark py4 m1 flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-end</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py3</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py4</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear p1">
+                <div class="md-col-6 p1 mx-auto">
+                    <div class="bold">Baseline</div>
+                    <div class="border border-gray-light flex flex-baseline mb1">
+                        <div class="white bg-blue-dark m1 center py3 flex-grow size-xs">text</div>
+                        <div class="white bg-blue-dark m1 center py2 flex-grow size-lg">text</div>
+                        <div class="white bg-blue-dark m1 center py4 flex-grow">text</div>
+                        <div class="white bg-blue-dark m1 center flex-grow size-xl">text</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-baseline</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+                    
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py3 size-xs</span><span class="attribute">&quot;</span><span class="element">&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py2 size-lg</span><span class="attribute">&quot;</span><span class="element">&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">py4</span><span class="attribute">&quot;</span><span class="element">&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">size-xl</span><span class="attribute">&quot;</span><span class="element">&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                    
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Horizontal spacing</h4>
+        <div class="p1 mb3">
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Justify-start <span class="light italic gray-dark">[default]</span></div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="bg-blue-dark px3 py2 m1"></div>
+                        <div class="bg-blue-dark px2 py2 m1"></div>
+                        <div class="bg-blue-dark px4 py2 m1"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px3 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px2 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px4 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Justify-end</div>
+                    <div class="border border-gray-light flex flex-just-end mb1">
+                        <div class="bg-blue-dark px3 py2 m1"></div>
+                        <div class="bg-blue-dark px2 py2 m1"></div>
+                        <div class="bg-blue-dark px4 py2 m1"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-just-end</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px3 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px2 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px4 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Justify-between</div>
+                    <div class="border border-gray-light flex flex-just-between mb1">
+                        <div class="bg-blue-dark px3 py2 m1"></div>
+                        <div class="bg-blue-dark px2 py2 m1"></div>
+                        <div class="bg-blue-dark px4 py2 m1"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-just-between</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px3 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px2 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px4 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Justify-around</div>
+                    <div class="border border-gray-light flex flex-just-around mb1">
+                        <div class="bg-blue-dark px3 py2 m1"></div>
+                        <div class="bg-blue-dark px2 py2 m1"></div>
+                        <div class="bg-blue-dark px4 py2 m1"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-just-around</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px3 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px2 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px4 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear p1">
+                <div class="md-col-6 p1 mx-auto">
+                    <div class="bold">Justify-center</div>
+                    <div class="border border-gray-light flex flex-just-center mb1">
+                        <div class="bg-blue-dark px3 py2 m1"></div>
+                        <div class="bg-blue-dark px2 py2 m1"></div>
+                        <div class="bg-blue-dark px4 py2 m1"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-just-center</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px3 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px2 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">px4 py2</span><span class="attribute">&quot;</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Wrapping</h4>
+        <div class="p1 mb2">
+            <div class="bold">No-wrap <span class="light italic gray-dark">[default]</span></div>
+            <div class="border border-gray-light flex mb1 overflow-hidden">
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+            </div>
+            <div class="code">
+                <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+            
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;...<br/>
+            
+                <span class="element">&lt;/div&gt;</span>
+            </div>
+        </div>
+        <div class="p1 mb2">
+            <div class="bold">Wrap</div>
+            <div class="border border-gray-light flex flex-wrap mb1">
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+                <div class="bg-blue-dark p2 m1"></div>
+            </div>
+            <div class="code">
+                <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-wrap</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+            
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;...<br/>
+            
+                <span class="element">&lt;/div&gt;</span>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+    <div class="mb4">
+        <h3>Child Classes</h3>
+        <p class="mb2">Use these for child-specific behaviors. These work for first-level child elements only. An element may be both a Parent and Child flex element without conflict.</p>
+
+        <div class="p1 mb2">
+            <h4>Ordering overrides</h4>
+            <div class="flex">
+                <div class="flex-grow green ml1">.flex-first</div>
+                <div class="flex-grow right red mr1">.flex-last</div>
+            </div>
+            <div class="border border-gray-light flex mb1">
+                <div class="bg-blue-dark m1 p1 white center bold flex-grow">1</div>
+                <div class="bg-blue-dark m1 p1 white center bold flex-grow">2</div>
+                <div class="bg-green m1 p1 white center bold flex-grow flex-first">3</div>
+                <div class="bg-blue-dark m1 p1 white center bold flex-grow">4</div>
+                <div class="bg-red m1 p1 white center bold flex-grow flex-last">5</div>
+                <div class="bg-blue-dark m1 p1 white center bold flex-grow">6</div>
+                <div class="bg-blue-dark m1 p1 white center bold flex-grow">7</div>
+                <div class="bg-blue-dark m1 p1 white center bold flex-grow">8</div>
+            </div>
+            <div class="code">
+                <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+            
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>1<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>2<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-first</span><span class="attribute">&quot;</span><span class="element">&gt;</span>3<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>4<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-last</span><span class="attribute">&quot;</span><span class="element">&gt;</span>5<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>6<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>7<span class="element">&lt;/div&gt;</span><br/>
+                &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>8<span class="element">&lt;/div&gt;</span><br/>
+
+                <span class="element">&lt;/div&gt;</span>
+            </div>
+        </div>
+
+        <div class="p1 mb2">
+            <h4>Horizontal adjustment</h4>
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Shrink <span class="light italic gray-dark">[default]</span></div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Grow</div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="m1 p1 bg-blue-dark white center flex-grow">grow</div>
+                        <div class="m1 p1 bg-blue-dark white center flex-grow">grow</div>
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-grow</span><span class="attribute">&quot;</span><span class="element">&gt;</span>grow<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-grow</span><span class="attribute">&quot;</span><span class="element">&gt;</span>grow<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Auto</div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                        <div class="m1 p1 bg-blue-dark white center flex-auto">auto</div>
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-auto</span><span class="attribute">&quot;</span><span class="element">&gt;</span>auto<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">None</div>
+                    <div class="border border-gray-light flex mb1">
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                        <div class="m1 p1 bg-blue-dark white center flex-none">none</div>
+                        <div class="m1 p1 bg-blue-dark white center">text</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-none</span><span class="attribute">&quot;</span><span class="element">&gt;</span>none<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span>text<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p1 mb2">
+            <h4>Vertical adjustment overrides</h4>
+            <p>For making an individual child element an exception to the parent's vertical behavior setting</p>
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Self-start</div>
+                    <div class="border border-gray-light flex flex-end mb1" style="height: 5.5em">
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p1 bg-blue-dark white center flex-grow flex-self-start">hey</div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-end</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-self-start</span><span class="attribute">&quot;</span><span class="element">&gt;</span>hey<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Self-end</div>
+                    <div class="border border-gray-light flex flex-start mb1" style="height: 5.5em">
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p1 bg-blue-dark white center flex-grow flex-self-end">no</div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex flex-start</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-self-end</span><span class="attribute">&quot;</span><span class="element">&gt;</span>no<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Self-center</div>
+                    <div class="border border-gray-light flex mb1" style="height: 5.5em">
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p1 bg-blue-dark white center flex-grow flex-self-center">wut</div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-self-center</span><span class="attribute">&quot;</span><span class="element">&gt;</span>wut<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+                <div class="md-col md-col-6 p1">
+                    <div class="bold">Self-baseline</div>
+                    <div class="border border-gray-light flex mb1" style="height: 5.5em">
+                        <div class="m1 p1 bg-blue-dark white center flex-grow flex-self-baseline">stahp</div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-self-baseline</span><span class="attribute">&quot;</span><span class="element">&gt;</span>stahp<span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+                <div class="md-col-6 p1 mx-auto">
+                    <div class="bold">Self-stretch</div>
+                    <div class="border border-gray-light flex flex-end mb1" style="height: 5.5em">
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p2 bg-blue-dark white center flex-grow"></div>
+                        <div class="m1 p1 bg-blue-dark white center flex-grow flex-self-stretch">srsly</div>
+                    </div>
+                    <div class="code mb2">
+                        <span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex</span><span class="attribute">&quot;</span><span class="element">&gt;</span><br/>
+
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div&gt;</span><span class="element">&lt;/div&gt;</span><br/>
+                        &nbsp;&nbsp;<span class="element">&lt;div</span> <span class="attribute">class=&quot;</span><span class="value">flex-self-stretch</span><span class="attribute">&quot;</span><span class="element">&gt;</span>wut<span class="element">&lt;/div&gt;</span><br/>
+
+                        <span class="element">&lt;/div&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
