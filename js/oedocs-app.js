@@ -1,6 +1,6 @@
 var app = angular.module('overeasyDocs-app', ['ngRoute']);
 
-app.config(['$routeProvider', '$locationProvider', function ($routeProvider) {  
+app.config(['$routeProvider', function ($routeProvider) {  
 
     $routeProvider
         .when('/', { templateUrl: 'views/home.html' } )
@@ -20,7 +20,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider) {
 
 }]);
 
-app.controller('MainController', function ($scope, $location) {
+app.controller('MainController', function ($scope, $location, $rootScope) {
 
     $scope.isCurrentLocation = function (loc) {
         return loc === $location.path();
@@ -33,5 +33,24 @@ app.controller('MainController', function ($scope, $location) {
             return '';
         }
     }
+
+    $scope.toggleNav = function () {
+        if ($scope.navOpen) {
+            $scope.navOpen = false;
+        } else {
+            $scope.navOpen = true;
+        }
+        return $scope.navOpen;
+    }
+
+    $scope.init = function () {
+        $scope.navOpen = false;
+    }
+
+    $scope.init();
+
+    $scope.$on('$routeChangeSuccess', function () {
+        $scope.init();
+    });
 
 });

@@ -53,8 +53,50 @@
         <!-- Page Wrapper -->
         <div class="min-vh flex">
             
-            <!-- Header Navigation -->
-            <div class="bg-gray-lighter">
+            <!-- Collapsed Navigation -->
+            <div class="bg-gray-lighter sm-hide">
+                <div class="p1">
+                    <a href="#/">
+                        <img src="img/oe-egg.svg" alt="OverEasy" style="width: 1.25em" />
+                    </a>
+                </div>
+                <div class="p1 center">
+                    <a href="javascript:void(0);" ng-click="toggleNav()">
+                        <img src="img/hamburger.svg" alt="NavToggle" style="width: 1.1em" />
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gray-lighter" ng-show="navOpen">
+                <div class="border-bottom border-gray">
+                    <a href="#/getting-started" ng-class="isActive('/getting-started')" class="p1 pr2 hover-red-light hover-bg-light-m plain block nowrap">Getting Started</a>
+                </div>
+                <div class="border-bottom border-gray">
+                    <div class="p1 pt2 h4 strong caps">Modules</div>
+                    <a href="#/whitespace" ng-class="isActive('/whitespace')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Whitespace</a>
+                    <a href="#/layout" ng-class="isActive('/layout')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Layout</a>
+                    <a href="#/grid" ng-class="isActive('/grid')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Grid</a>
+                    <a href="#/flex" ng-class="isActive('/flex')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Flex</a>
+                    <a href="#/typography" ng-class="isActive('/typography')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Typography</a>
+                    <a href="#/colors" ng-class="isActive('/colors')" class="p1 pr2 hover-bg-light-l plain block nowrap">
+                        <span class="red">C</span>
+                        <span class="orange">o</span>
+                        <span class="yellow-dark">l</span>
+                        <span class="green">o</span>
+                        <span class="blue">r</span>
+                        <span class="gray-dark">s</span>
+                    </a>
+                    <a href="#/backgrounds" ng-class="isActive('/backgrounds')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Backgrounds</a>
+                    <a href="#/borders" ng-class="isActive('/borders')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Borders</a>
+                    <a href="#/buttons" ng-class="isActive('/buttons')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Buttons</a>
+                    <a href="#/input-fields" ng-class="isActive('/input-fields')" class="p1 pr2 hover-green hover-bg-light-l plain block nowrap">Input Fields</a>
+                </div>
+                <div>
+                    <a href="#/configure" ng-class="isActive('/configure')" class="p1 pr2 hover-blue hover-bg-light-m plain block nowrap">Configure</a>
+                </div>
+            </div>
+
+            <!-- Expanded Navigation -->
+            <div class="bg-gray-lighter sm-show">
                 <div class="p1">
                     <a href="#/">
                         <img src="img/oe-egg.svg" alt="OverEasy" style="width: 5em" />

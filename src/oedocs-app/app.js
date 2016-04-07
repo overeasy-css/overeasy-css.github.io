@@ -1,6 +1,6 @@
 var app = angular.module('overeasyDocs-app', ['ngRoute']);
 
-app.config(['$routeProvider', '$locationProvider', function ($routeProvider) {  
+app.config(['$routeProvider', function ($routeProvider) {  
 
     $routeProvider
         .when('/', { templateUrl: 'views/home.html' } )
