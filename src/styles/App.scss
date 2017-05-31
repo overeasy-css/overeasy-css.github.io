@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+:root {
+	color: #2a3442;
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 900 }
+
+.bold { font-weight: 700 }
+.strong { font-weight: 900 }
+
+.size-huge { font-size: 3.5rem }
+
+p { max-width: 60em }
+
+.monospace { font-family: monospace }
+
+.package-comparison {
+	td {
+		padding: 0.5em;
+	}
+}
