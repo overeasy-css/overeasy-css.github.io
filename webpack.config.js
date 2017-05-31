@@ -2,7 +2,7 @@ var Webpack = require('webpack'),
     path = require('path');
 
 var sourcePath = path.join(__dirname, 'src', 'index.js'),
-    clientPath = path.join(__dirname, 'client');
+    clientPath = path.join(__dirname);
 
 
 var config = {
