@@ -3,12 +3,12 @@ import React from 'react';
 
 const Whitespace = () => (
 	<div id="whitespace" className="p2">
-		
+
 		<h2 className="my3">Whitespace</h2>
 
 		<div className="my3">
 			<h3>Margins and Padding</h3>
-			<p>Quick utilities for controlling your 
+			<p>Quick utilities for controlling your
 			margins and padding on the fly</p>
 
 			<div className="my1 clear">
@@ -44,19 +44,19 @@ const Whitespace = () => (
 					<div className="m1">
 						<h4>Padding</h4>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block bg-blue-dark white center">.p0</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block p1 bg-blue-dark white center">.p1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block p2 bg-blue-dark white center">.p2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block p3 bg-blue-dark white center">.p3</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block p4 bg-blue-dark white center">.p4</div>
 					</div>
 					<div className="m1 p1 bg-gray-lighter border border-gray monospace">
@@ -71,11 +71,11 @@ const Whitespace = () => (
 			</div>
 
 		</div>
-		
+
 		<div className="my3">
 			<h3>Opposite-side Utilities</h3>
-			<p>If you only need to target horizontal or vertical 
-			whitespace, the X and Y utilities refer to the X-axis 
+			<p>If you only need to target horizontal or vertical
+			whitespace, the X and Y utilities refer to the X-axis
 			(left and right) and Y-axis (top and bottom)</p>
 
 			<div className="my1 clear">
@@ -112,28 +112,28 @@ const Whitespace = () => (
 					<div className="m1">
 						<h4>Padding</h4>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block px1 bg-blue-dark white center">.px1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block px2 bg-blue-dark white center">.px2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block px3 bg-blue-dark white center">.px3</div>
 					</div>
-					<div className="m1 mb3 border border-gray flex flex-just-center">
+					<div className="m1 mb3 border border-gray flex flex-justify-center">
 						<div className="inline-block px4 bg-blue-dark white center">.px4</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block py1 bg-blue-dark white center">.py1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block py2 bg-blue-dark white center">.py2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block py3 bg-blue-dark white center">.py3</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block py4 bg-blue-dark white center">.py4</div>
 					</div>
 				</div>
@@ -204,52 +204,52 @@ const Whitespace = () => (
 					<div className="m1">
 						<h4>Padding</h4>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pt1 bg-blue-dark white center">.pt1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pt2 bg-blue-dark white center">.pt2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pt3 bg-blue-dark white center">.pt3</div>
 					</div>
-					<div className="m1 mb3 border border-gray flex flex-just-center">
+					<div className="m1 mb3 border border-gray flex flex-justify-center">
 						<div className="inline-block pt4 bg-blue-dark white center">.pt4</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pr1 bg-blue-dark white center">.pr1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pr2 bg-blue-dark white center">.pr2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pr3 bg-blue-dark white center">.pr3</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pr4 bg-blue-dark white center">.pr4</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pb1 bg-blue-dark white center">.pb1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pb2 bg-blue-dark white center">.pb2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pb3 bg-blue-dark white center">.pb3</div>
 					</div>
-					<div className="m1 mb3 border border-gray flex flex-just-center">
+					<div className="m1 mb3 border border-gray flex flex-justify-center">
 						<div className="inline-block pb4 bg-blue-dark white center">.pb4</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pl1 bg-blue-dark white center">.pl1</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pl2 bg-blue-dark white center">.pl2</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pl3 bg-blue-dark white center">.pl3</div>
 					</div>
-					<div className="m1 border border-gray flex flex-just-center">
+					<div className="m1 border border-gray flex flex-justify-center">
 						<div className="inline-block pl4 bg-blue-dark white center">.pl4</div>
 					</div>
 				</div>

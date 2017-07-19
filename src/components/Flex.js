@@ -8,7 +8,7 @@ const Flex = () => {
 
 	return (
 		<div id="flex" className="p2">
-			
+
 			<h2 className="my3">Flex</h2>
 
 			<div className="my3">
@@ -67,7 +67,7 @@ const Flex = () => {
 
 				<div className="p1">
 					<h4>Vertical position</h4>
-					<div className="m1 flex flex-wrap flex-just-center">
+					<div className="m1 flex flex-wrap flex-justify-center">
 
 						<div className="flex-grow m1">
 							<div className="my1">
@@ -180,13 +180,13 @@ const Flex = () => {
 
 						<div className="flex-grow m1" style={{ minWidth: '18rem' }}>
 							<div className="my1 bold">Justify-end</div>
-							<div className="my1 flex flex-just-end border border-gray">
+							<div className="my1 flex flex-justify-end border border-gray">
 								<div className="m1 px3 py2 bg-blue-dark"></div>
 								<div className="m1 px2 py2 bg-blue-dark"></div>
 								<div className="m1 px4 py2 bg-blue-dark"></div>
 							</div>
 							<div className="my1 p1 bg-gray-lighter border border-gray monospace">
-								&lt;div class=&quot;flex flex-just-end&quot;&gt;<br/>
+								&lt;div class=&quot;flex flex-justify-end&quot;&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px3 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px2 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px4 py2&quot;&gt;&lt;/div&gt;<br/>
@@ -196,13 +196,13 @@ const Flex = () => {
 
 						<div className="flex-grow m1" style={{ minWidth: '18rem' }}>
 							<div className="my1 bold">Justify-between</div>
-							<div className="my1 flex flex-just-between border border-gray">
+							<div className="my1 flex flex-justify-between border border-gray">
 								<div className="m1 px3 py2 bg-blue-dark"></div>
 								<div className="m1 px2 py2 bg-blue-dark"></div>
 								<div className="m1 px4 py2 bg-blue-dark"></div>
 							</div>
 							<div className="my1 p1 bg-gray-lighter border border-gray monospace">
-								&lt;div class=&quot;flex flex-just-between&quot;&gt;<br/>
+								&lt;div class=&quot;flex flex-justify-between&quot;&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px3 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px2 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px4 py2&quot;&gt;&lt;/div&gt;<br/>
@@ -212,13 +212,13 @@ const Flex = () => {
 
 						<div className="flex-grow m1" style={{ minWidth: '18rem' }}>
 							<div className="my1 bold">Justify-around</div>
-							<div className="my1 flex flex-just-around border border-gray">
+							<div className="my1 flex flex-justify-around border border-gray">
 								<div className="m1 px3 py2 bg-blue-dark"></div>
 								<div className="m1 px2 py2 bg-blue-dark"></div>
 								<div className="m1 px4 py2 bg-blue-dark"></div>
 							</div>
 							<div className="my1 p1 bg-gray-lighter border border-gray monospace">
-								&lt;div class=&quot;flex flex-just-around&quot;&gt;<br/>
+								&lt;div class=&quot;flex flex-justify-around&quot;&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px3 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px2 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px4 py2&quot;&gt;&lt;/div&gt;<br/>
@@ -228,13 +228,13 @@ const Flex = () => {
 
 						<div className="flex-grow m1" style={{ minWidth: '18rem' }}>
 							<div className="my1 bold">Justify-center</div>
-							<div className="my1 flex flex-just-center border border-gray">
+							<div className="my1 flex flex-justify-center border border-gray">
 								<div className="m1 px3 py2 bg-blue-dark"></div>
 								<div className="m1 px2 py2 bg-blue-dark"></div>
 								<div className="m1 px4 py2 bg-blue-dark"></div>
 							</div>
 							<div className="my1 p1 bg-gray-lighter border border-gray monospace">
-								&lt;div class=&quot;flex flex-just-center&quot;&gt;<br/>
+								&lt;div class=&quot;flex flex-justify-center&quot;&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px3 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px2 py2&quot;&gt;&lt;/div&gt;<br/>
 								&nbsp;&nbsp;&lt;div class=&quot;px4 py2&quot;&gt;&lt;/div&gt;<br/>
@@ -289,9 +289,9 @@ const Flex = () => {
 
 			<div className="my3">
 				<h3>Child Classes</h3>
-				<p>Use these for child-specific behaviors. 
-				These work for first-level child elements only. 
-				An element may be both a Parent and Child flex 
+				<p>Use these for child-specific behaviors.
+				These work for first-level child elements only.
+				An element may be both a Parent and Child flex
 				element without conflict.</p>
 
 				<div className="p1">
@@ -407,7 +407,7 @@ const Flex = () => {
 
 				<div className="p1">
 					<h4>Vertical adjustment overrides</h4>
-					<p>For making an individual child element an exception 
+					<p>For making an individual child element an exception
 					to the parent&apos;s vertical behavior setting</p>
 
 					<div className="m1 flex flex-wrap">
