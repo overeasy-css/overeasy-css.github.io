@@ -2,4 +2,4 @@
 
 Documentation site for OverEasy
 
-http://overeasycss.com
+http://overeasy-css.github.io/
